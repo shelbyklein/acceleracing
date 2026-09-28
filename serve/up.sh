@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Start Tilt Kart on this machine, or apply changes to this folder: nginx, the
+# Start Acceleracing on this machine, or apply changes to this folder: nginx, the
 # online relay, the updater, and the 'moto' Cloudflare Tunnel, which serves it at
 # https://moto.shelbyklein.com. Safe to re-run.
 set -euo pipefail

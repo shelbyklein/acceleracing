@@ -1,8 +1,10 @@
-# Tilt Kart on the Beelink: nginx serves ../public, the relay pairs online
+# Acceleracing on the Beelink: nginx serves ../public, the relay pairs online
 # players, the updater keeps the files current with the git branch, and
 # cloudflared connects the dedicated 'moto' Cloudflare Tunnel, which routes
 # moto.shelbyklein.com to http://web:80 on this compose network.
 # Start, or apply changes to this folder, with ./up.sh.
+# The project keeps its original name so ./up.sh replaces the running containers
+# rather than starting a second set beside them.
 name: tilt-kart
 
 x-logging: &logging

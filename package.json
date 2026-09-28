@@ -1,9 +1,9 @@
 {
-  "name": "tilt-kart",
+  "name": "acceleracing",
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "First-person iPad kart racer. Turn the iPad to steer; the horizon stays level. Online 2-player with a pairing code. Live at moto.shelbyklein.com.",
+  "description": "Acceleracing: first-person iPad kart racer. Turn the iPad to steer; the horizon stays level. Online 2-player with a pairing code. Live at moto.shelbyklein.com.",
   "license": "UNLICENSED",
   "scripts": {
     "build": "node build.mjs",

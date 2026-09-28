@@ -1,4 +1,4 @@
-// Tilt Kart relay: pairs two players by code and passes their messages along.
+// Acceleracing relay: pairs two players by code and passes their messages along.
 //
 // Runs on the Beelink next to nginx, which forwards wss://moto.shelbyklein.com/net
 // here (see docker-compose.yml). Because it rides the same HTTPS connection that

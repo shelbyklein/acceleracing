@@ -1,7 +1,7 @@
 // Central tuning. Everything that affects feel lives here so it can be tweaked
 // without digging through the simulation code.
 
-export const GAME_NAME = 'Tilt Kart';
+export const GAME_NAME = 'Acceleracing';
 
 // Bump when the network message format changes; mismatched clients refuse to pair.
 export const PROTOCOL_VERSION = 1;

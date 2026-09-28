@@ -1,6 +1,6 @@
 {
-  "name": "Tilt Kart",
-  "short_name": "Tilt Kart",
+  "name": "Acceleracing",
+  "short_name": "Acceleracing",
   "description": "First-person kart racer. Turn the iPad to steer; the horizon stays level.",
   "start_url": "./",
   "scope": "./",

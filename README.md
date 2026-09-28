@@ -1,10 +1,10 @@
-# Tilt Kart
+# Acceleracing
 
 A first-person kart racer for iPad. Hold the iPad like a steering wheel and turn it to steer. The view counter-rotates against the turn, so the horizon stays level with the real ground and the on-screen steering wheel stays glued to the glass: the iPad _is_ the wheel. The camera never pitches, so the view always looks straight ahead, parallel to the track.
 
 Race a CPU rival solo, or race another person online: one device hosts and shows a four-letter code, the other types it in.
 
-Live at **<https://moto.shelbyklein.com>**, served from the Beelink. `public/` is the whole site: plain static files, with the built bundle committed. `serve/` runs it, including the small relay that pairs online players.
+Live at **<https://moto.shelbyklein.com>**, served from the Beelink (checked out at `~/acceleracing`). `public/` is the whole site: plain static files, with the built bundle committed. `serve/` runs it, including the small relay that pairs online players.
 
 ## Controls
 

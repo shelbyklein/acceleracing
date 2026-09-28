@@ -1,4 +1,4 @@
-Tilt Kart bundles the following open-source packages in game.js.
+Acceleracing bundles the following open-source packages in game.js.
 
 ------------------------------------------------------------------------
 

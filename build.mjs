@@ -70,6 +70,6 @@ function writeNotices(metafile) {
   const rule = `\n\n${'-'.repeat(72)}\n\n`;
   writeFileSync(
     'public/third-party-licenses.txt',
-    `Tilt Kart bundles the following open-source packages in game.js.${rule}${sections.join(rule)}\n`,
+    `Acceleracing bundles the following open-source packages in game.js.${rule}${sections.join(rule)}\n`,
   );
 }
