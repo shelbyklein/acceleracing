@@ -40,12 +40,12 @@ Cloudflare supplies the certificate, and nothing is exposed on the router or the
 Over SSH, one line clones the game (first time) and starts or updates everything:
 
 ```sh
-git clone -q --depth 1 -b claude/kart-accelerometer-steering-yry610 https://github.com/shelbykleindesign/steamdeckhq-crankshaft-plugin ~/tilt-kart 2>/dev/null; ~/tilt-kart/kart/serve/up.sh
+git clone -q https://github.com/shelbyklein/acceleracing ~/acceleracing 2>/dev/null; ~/acceleracing/serve/up.sh
 ```
 
 `up.sh` pulls the latest files, fetches the tunnel token with this machine's `cloudflared` login into `serve/.env` (mode 600) the first time, and runs `docker compose up -d`. If `cloudflared` isn't logged in, it says how to fix that.
 
-After that, deploying is just pushing to the branch: the updater fast-forwards the checkout within a minute, and nginx serves the new files on the next page load (`docker compose logs updater` shows what it pulled). Changes inside `serve/` (the nginx config, the relay, the compose file) only take effect when you re-run `./up.sh`, which restarts the services that use them. `npm run build` stamps `game.js` and `style.css` in `index.html` with a content hash (`?v=…`), and `index.html` is never cached. So players get a new version on their next load, even though Cloudflare lets browsers keep those files for hours.
+After that, deploying is just pushing to `main`: the updater fast-forwards the checkout within a minute, and nginx serves the new files on the next page load (`docker compose logs updater` shows what it pulled). Changes inside `serve/` (the nginx config, the relay, the compose file) only take effect when you re-run `./up.sh`, which restarts the services that use them. `npm run build` stamps `game.js` and `style.css` in `index.html` with a content hash (`?v=…`), and `index.html` is never cached. So players get a new version on their next load, even though Cloudflare lets browsers keep those files for hours.
 
 The tunnel, its route and the DNS record live in Cloudflare (Zero Trust → Networks → Tunnels → `moto`), so nothing about the domain is configured on the Beelink.
 

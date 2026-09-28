@@ -40,9 +40,9 @@ services:
     environment:
       HOME: /tmp
     volumes:
-      - ../..:/repo
+      - ..:/repo
     working_dir: /repo
-    entrypoint: ['/bin/sh', '/repo/kart/serve/update.sh']
+    entrypoint: ['/bin/sh', '/repo/serve/update.sh']
 
   tunnel:
     image: cloudflare/cloudflared:latest

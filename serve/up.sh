@@ -35,7 +35,7 @@ if ! grep -qs '^TUNNEL_TOKEN=.' .env; then
 fi
 
 # The updater pulls as whoever owns the checkout, so the files it writes stay theirs.
-grep -qs '^KART_USER=' .env || add_env "KART_USER=$(stat -c '%u:%g' ../..)"
+grep -qs '^KART_USER=' .env || add_env "KART_USER=$(stat -c '%u:%g' ..)"
 
 docker compose up -d --remove-orphans
 # Bind-mounted files (nginx.conf, relay.mjs, update.sh) keep their old contents
